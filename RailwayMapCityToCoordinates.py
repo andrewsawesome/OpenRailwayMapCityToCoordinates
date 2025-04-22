@@ -1,6 +1,6 @@
 import webbrowser
 from geopy.geocoders import Nominatim
-geolocator = Nominatim(user_agent='myapplication')
+geolocator = Nominatim(user_agent='RailwayMapCityToCoordinates')
 city = input("What city would you like to go to? ")
 state = input("In what state/country (Full name or two-letter abbreviation)? ")
 try:
