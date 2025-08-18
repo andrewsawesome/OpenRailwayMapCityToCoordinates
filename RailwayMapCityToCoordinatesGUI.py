@@ -13,7 +13,7 @@ def openMap():
     try:
         latitude = location.latitude
         longitude = location.longitude
-        link = (f"https://openrailwaymap.fly.dev/#view=12.17/{latitude}/{longitude}")
+        link = (f"https://openrailwaymap.app/#view=12.17/{latitude}/{longitude}")
         webbrowser.open_new(link)
     except AttributeError:
         infoLabel.config(text="We could not find your city. Please make sure your spelling is correct.")
@@ -37,5 +37,6 @@ infoButton = Button(text="Open", command=openMap)
 infoButton.pack()
 infoLabel = Label(text="RailwayMap City to Coordinates by andrewsawesome \n github.com/andrewsawesome/OpenRailwayMapCityToCoordinates")
 infoLabel.pack()
+
 
 window.mainloop()
