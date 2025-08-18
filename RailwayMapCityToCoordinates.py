@@ -19,5 +19,6 @@ except Exception:
     longitude = -75.1635262
 print(latitude)
 print(longitude)
-link = (f"https://openrailwaymap.fly.dev/#view=12.17/{latitude}/{longitude}")
+link = (f"https://openrailwaymap.app/#view=12.17/{latitude}/{longitude}")
 webbrowser.open_new(link)
+
