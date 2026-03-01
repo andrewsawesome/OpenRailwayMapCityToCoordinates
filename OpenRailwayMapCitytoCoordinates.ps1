@@ -6,9 +6,10 @@ $city= [PSCustomObject]@{
 
 $city.postalcode = Read-Host "What is the postal code of the city?"
 
-$results=($($city | Invoke-OSM -Email "36270171+andrewsawesome@users.noreply.github.com" -ResultsLanguage "en"))
+$results=($($city | Invoke-OSM -Email "36270171+andrewsawesome@users.noreply.github.com" -ResultsLanguage "en" -EA 0))
 $lat=$results.lat
 $lon=$results.lon
 
 
 Start-Process "https://openrailwaymap.app/#view=12.17/$lat/$lon"
+
